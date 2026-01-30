@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINE-PRO | Индустриальный Облачный Майнинг</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
+        
+        :root {
+            --primary: #00f2ff;
+            --secondary: #7000ff;
+            --bg-dark: #05070a;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #e2e8f0;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .neo-card {
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.5));
+            border: 1px solid rgba(0, 242, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .neo-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.15);
+            transform: scale(1.02);
+        }
+
+        .glow-text { text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); }
+        .cyber-btn {
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+            transition: all 0.3s;
+        }
+        .cyber-btn:hover { background: var(--primary); color: black; }
+    </style>
+</head>
+<body>
+
+    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+                    <i class="fas fa-microchip text-black text-xl"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-widest font-['Orbitron']">MINE<span class="text-cyan-400">-PRO</span></span>
+            </div>
+            <nav class="hidden lg:flex space-x-10 text-sm font-semibold uppercase tracking-widest">
+                <a href="#features" class="hover:text-cyan-400 transition">Технологии</a>
+                <a href="#mining" class="hover:text-cyan-400 transition">Контракты</a>
+                <a href="#calc" class="hover:text-cyan-400 transition">Доходность</a>
+                <a href="#faq" class="hover:text-cyan-400 transition">FAQ</a>
+            </nav>
+            <div class="flex gap-4">
+                <button class="hidden sm:block text-cyan-400 border border-cyan-400 px-6 py-2 rounded-sm hover:bg-cyan-400 hover:text-black transition">ВХОД</button>
+                <button class="bg-cyan-500 text-black px-6 py-2 rounded-sm font-bold cyber-btn">РЕГИСТРАЦИЯ</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-40 pb-20 px-6 overflow-hidden">
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-cyan-500/10 blur-[120px] rounded-full"></div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <h1 class="text-6xl md:text-8xl font-black mb-8 leading-none uppercase font-['Orbitron']">
+                Будущее <br><span class="text-cyan-400 glow-text">Майнинга</span> Здесь
+            </h1>
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto mb-12 font-light">
+                Получайте пассивный доход, арендуя вычислительные мощности ведущих дата-центров мира. 
+                Прозрачные выплаты каждые 24 часа прямо на ваш кошелек.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="neo-card p-4 rounded-xl flex items-center gap-4 w-64">
+                    <i class="fas fa-bolt text-yellow-400 text-2xl"></i>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-500">Hashrate Online</p>
+                        <p class="text-lg font-bold">142.50 EH/s</p>
+                    </div>
+                </div>
+                <div class="neo-card p-4 rounded-xl flex items-center gap-4 w-64">
+                    <i class="fas fa-users text-cyan-400 text-2xl"></i>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-500">Активных майнеров</p>
+                        <p class="text-lg font-bold">84,209</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mining" class="py-24 px-6 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-4xl font-bold font-['Orbitron'] mb-4">Активные контракты</h2>
+                    <p class="text-slate-400">Выберите мощность, соответствующую вашим целям</p>
+                </div>
+                <div class="hidden md:block text-right text-cyan-400 font-bold">Обновлено: Сегодня, 14:00</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="neo-card p-8 rounded-3xl flex flex-col relative overflow-hidden">
+                    <div class="absolute -right-8 -top-8 w-24 h-24 bg-cyan-500/20 rotate-45"></div>
+                    <div class="mb-6">
+                        <span class="text-cyan-400 text-sm font-bold tracking-widest uppercase">Promo Plan</span>
+                        <h3 class="text-3xl font-bold mt-2 font-['Orbitron'] tracking-tighter">Starter v2</h3>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1518544830222-38a3c8678df1?auto=format&fit=crop&w=600" class="rounded-xl mb-6 grayscale hover:grayscale-0 transition duration-500 h-40 object-cover" alt="Miner">
+                    <div class="space-y-4 mb-8 flex-grow">
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-500 italic">Цена входа:</span>
+                            <span class="font-bold text-xl">$10.00</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-500">Чистая прибыль:</span>
+                            <span class="font-bold text-green-400">+$10.00</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-500">Срок работы:</span>
+                            <span class="font-bold text-cyan-300">20 Дней</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Общий возврат:</span>
+                            <span class="font-bold">$20.00</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-white text-black py-4 font-black uppercase tracking-widest hover:bg-cyan-400 transition">Активировать</button>
+                </div>
+
+                <div class="neo-card p-8 rounded-3xl flex flex-col border-cyan-500/50 scale-105 shadow-2xl z-10">
+                    <div class="mb-6">
+                        <span class="text-indigo-400 text-sm font-bold tracking-widest uppercase">Popular Choice</span>
+                        <h3 class="text-3xl font-bold mt-2 font-['Orbitron'] tracking-tighter">Pro-Mining RTX</h3>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&w=600" class="rounded-xl mb-6 h-40 object-cover" alt="Miner">
+                    <div class="space-y-4 mb-8 flex-grow">
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-500 italic">Цена входа:</span>
+                            <span class="font-bold text-xl">$20.00</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-500">Чистая прибыль:</span>
+                            <span class="font-bold text-green-400">+$25.00</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-500">Срок работы:</span>
+                            <span class="font-bold text-cyan-300">30 Дней</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">ROI:</span>
+                            <span class="font-bold text-indigo-400">225%</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-cyan-500 text-black py-4 font-black uppercase tracking-widest hover:bg-white transition">Инвестировать</button>
+                </div>
+
+                <div class="neo-card p-8 rounded-3xl flex flex-col border-yellow-500/20">
+                    <div class="mb-6">
+                        <span class="text-yellow-500 text-sm font-bold tracking-widest uppercase">VIP Contract</span>
+                        <h3 class="text-3xl font-bold mt-2 font-['Orbitron'] tracking-tighter">Enterprise S21</h3>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=600" class="rounded-xl mb-6 grayscale hover:grayscale-0 transition h-40 object-cover" alt="Miner">
+                    <div class="space-y-4 mb-8 flex-grow">
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-500 italic">Цена входа:</span>
+                            <span class="font-bold text-xl font-['Orbitron']">$500.00</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-500">Чистая прибыль:</span>
+                            <span class="font-bold text-green-400">+$1250.00</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-500">Срок работы:</span>
+                            <span class="font-bold text-cyan-300">60 Дней</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Daily:</span>
+                            <span class="font-bold">$29.16 / день</span>
+                        </div>
+                    </div>
+                    <button class="w-full border border-yellow-500/50 text-yellow-500 py-4 font-black uppercase tracking-widest hover:bg-yellow-500 hover:text-black transition">Получить VIP</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="calc" class="py-24 px-6 relative">
+        <div class="max-w-4xl mx-auto neo-card p-12 rounded-[40px]">
+            <h2 class="text-4xl font-bold mb-10 text-center font-['Orbitron'] uppercase">Калькулятор прибыли</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <label class="block text-slate-400 mb-4 uppercase tracking-widest text-sm">Сумма инвестиции ($)</label>
+                        <input type="range" id="investRange" min="10" max="10000" value="100" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-cyan-500">
+                        <div class="flex justify-between mt-2 font-bold">
+                            <span>$10</span>
+                            <span id="currentVal" class="text-cyan-400 text-2xl">$100</span>
+                            <span>$10,000</span>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-black/40 rounded-lg">
+                        <p class="text-slate-400 text-sm">Ваша персональная скидка:</p>
+                        <p class="text-xl font-bold text-yellow-400">0.00% (No Promo)</p>
+                    </div>
+                </div>
+                <div class="bg-cyan-500/10 p-8 rounded-3xl border border-cyan-500/20">
+                    <div class="mb-6">
+                        <p class="text-slate-400 text-sm mb-1 uppercase">Прибыль через месяц</p>
+                        <p id="profitVal" class="text-5xl font-black text-cyan-400 font-['Orbitron'] tracking-tighter">$225.00</p>
+                    </div>
+                    <button class="w-full py-4 bg-cyan-500 text-black font-bold rounded-xl shadow-[0_10px_20px_rgba(6,182,212,0.3)]">НАЧАТЬ ЗАРАБАТЫВАТЬ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 bg-black/50">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-2xl font-bold mb-6 font-['Orbitron']">MINE<span class="text-cyan-400">-PRO</span></div>
+                <p class="text-slate-500 max-w-sm mb-6">Ведущая мировая платформа для облачного майнинга. Мы делаем криптовалюты доступными для всех, устраняя сложность настройки оборудования.</p>
+                <div class="flex gap-4 text-2xl">
+                    <i class="fab fa-telegram hover:text-cyan-400 cursor-pointer transition"></i>
+                    <i class="fab fa-twitter hover:text-cyan-400 cursor-pointer transition"></i>
+                    <i class="fab fa-discord hover:text-cyan-400 cursor-pointer transition"></i>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase">Ресурсы</h4>
+                <ul class="text-slate-500 space-y-4 text-sm">
+                    <li class="hover:text-white cursor-pointer transition">Whitepaper</li>
+                    <li class="hover:text-white cursor-pointer transition">Статистика сети</li>
+                    <li class="hover:text-white cursor-pointer transition">Партнерам</li>
+                    <li class="hover:text-white cursor-pointer transition">API Документация</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase">Поддержка</h4>
+                <ul class="text-slate-500 space-y-4 text-sm">
+                    <li class="hover:text-white cursor-pointer transition">Центр помощи</li>
+                    <li class="hover:text-white cursor-pointer transition">Безопасность</li>
+                    <li class="hover:text-white cursor-pointer transition">Контакты</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Логика калькулятора
+        const range = document.getElementById('investRange');
+        const currentValLabel = document.getElementById('currentVal');
+        const profitValLabel = document.getElementById('profitVal');
+
+        range.addEventListener('input', (e) => {
+            const val = parseInt(e.target.value);
+            currentValLabel.innerText = `$${val}`;
+            
+            // Формула: примерно 225% за 30 дней
+            const profit = (val * 2.25).toFixed(2);
+            profitValLabel.innerText = `$${profit}`;
+        });
+    </script>
+</body>
+                          </html>
